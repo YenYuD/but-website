@@ -4,4 +4,109 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+body {
+  height: 100vh;
+}
+
+body header nav.mobile div.container {
+  padding: 20px 20px 0 20px;
+}
+
+body header nav.mobile div.container div.nav-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header nav.mobile div.container div.nav-logo a.logo svg {
+  width: 80px;
+}
+
+body header nav.mobile div.container div.hamburger div.bar {
+  position: relative;
+  width: 18px;
+  height: 14px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+body header nav.mobile div.container div.hamburger div.bar span {
+  display: block;
+  height: 1px;
+  background-color: black;
+}
+
+body header nav.mobile div.container div.hamburger div.bar span.item2 {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+}
+
+body header nav.mobile div.container div.hamburger div.bar span.item3 {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+}
+
+body header nav.desktop {
+  position: fixed;
+  padding-top: 30px;
+  width: 100%;
+}
+
+body header nav.desktop div.container {
+  max-width: 960px;
+  margin: 0 auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header nav.desktop div.container ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 80px;
+}
+
+body header nav.desktop div.container ul li {
+  margin-left: 25px;
+}
+
+body header nav.desktop div.container ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Bree Serif";
+}
+
+body header nav.desktop div.container ul.icon {
+  margin: 0;
+  padding-top: 30px;
+}
+
+body header nav.desktop div.container ul.icon li {
+  margin-left: 11px;
+}
+
+body header nav.desktop div.container ul.icon li a {
+  margin: 0;
+}
 /*# sourceMappingURL=style.css.map */

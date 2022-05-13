@@ -17,7 +17,7 @@
     </head>
     <body>
         <header>
-            <nav class="mobile">
+            <nav class="mobile" style="display: none">
                 <div class="container">
                     <div class="nav-logo">
                         <a class="logo" href="https://www.but.com.tw/">
@@ -196,7 +196,7 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="hamgurger">
+                    <div class="hamburger">
                         <div class="bar">
                             <span class="item1"></span
                             ><span class="item2"></span
@@ -205,7 +205,7 @@
                     </div>
                 </div>
             </nav>
-            <nav class="desktop" style="display: none">
+            <nav class="desktop">
                 <div class="container">
                     <div class="logo">
                         <a class="logo" href="https://www.but.com.tw/">
@@ -343,14 +343,14 @@
                             </svg>
                         </a>
                     </div>
-                    <ul>
+                    <ul class="en-bar">
                         <li><a href="#">shop online</a></li>
                         <li><a href="#">but Art Present</a></li>
                         <li><a href="#">but style</a></li>
                         <li><a href="#">we found love</a></li>
                         <li><a href="#">hello!baby</a></li>
                     </ul>
-                    <ul>
+                    <ul class="icon">
                         <li>
                             <a href="#">
                                 <svg
@@ -615,7 +615,28 @@
                 </div>
             </section>
         </main>
-
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const lists = document.querySelectorAll(".en-bar > li");
+                document
+                    .querySelectorAll(".en-bar > li > a")
+                    .forEach((item) => {
+                        item.style.pointerEvents = "none";
+                    });
+                lists.forEach((item) => item.classList.add("link"));
+                const ul = document.querySelector(".en-bar");
+                ul.addEventListener("mouseover", function (e) {
+                    if (e.target.classList.contains("link")) {
+                        e.target.classList.add("hover");
+                    }
+                });
+                ul.addEventListener("mouseout", function (e) {
+                    if (e.target.classList.contains("link")) {
+                        e.target.classList.remove("hover");
+                    }
+                });
+            });
+        </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
