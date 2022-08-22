@@ -140,7 +140,7 @@ body header nav.desktop div.container ul.icon li a {
 }
 
 body main .banner {
-  background-image: url(../imgs/art-bigbanner-mobile-6c275b55907e3c51e8d42ded166469a4853fc69d27594dafe4dc02ebe618ffdc.jpeg);
+  background-image: url(/but-sebsite/imgs/art-bigbanner-mobile-6c275b55907e3c51e8d42ded166469a4853fc69d27594dafe4dc02ebe618ffdc.jpeg);
   padding-top: 136.88%;
   background-size: cover;
   background-position: center center;
@@ -149,7 +149,7 @@ body main .banner {
 @media screen and (min-width: 960px) {
   body main .banner {
     padding-top: 64.53%;
-    background-image: url(../imgs/art-bigbanner-127e7bf8364e24995195d4cb629ccc9256ac5600743b8f.jpg);
+    background-image: url(/but-sebsite/imgs/art-bigbanner-127e7bf8364e24995195d4cb629ccc9256ac5600743b8f.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
